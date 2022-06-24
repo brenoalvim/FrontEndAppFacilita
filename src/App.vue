@@ -20,6 +20,7 @@ export default {
 :root {
   --brand-color: #2693ff;
   --light-color: #ffffff;
+  --active-color: #1182F2;
   --font-family: "gilroy", arial;
 }
 </style>
