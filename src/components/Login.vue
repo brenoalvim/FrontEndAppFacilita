@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Login",
   methods: {
@@ -59,8 +60,8 @@ export default {
       const rootUsername = localStorage.getItem("username");
       const rootPassword = localStorage.getItem("password");
       if (username == rootUsername && password == rootPassword) {
-        alert("Login realizado com sucesso");
         localStorage.setItem("login", "true");
+        this.$router.push("/dashboard");
       } else {
         alert(
           "Usuário ou Senha incorretos. Tente username: root password: root"

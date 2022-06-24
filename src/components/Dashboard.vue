@@ -1,12 +1,15 @@
 <template>
-  <div class="dashboard"></div>
+  <div class="dashboard">
+    <Navbar />
+  </div>
 </template>
 
 <script>
+import navbar from "../components/navbar/navbar.vue";
 export default {
-  name: "Dashboard"
+  name: "Dashboard",
+  components: navbar
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped></style>
