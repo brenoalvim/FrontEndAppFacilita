@@ -12,7 +12,7 @@
       <div class="br"></div>
       <span class="subtitle">Gestão de tarefas pessoais</span>
     </div>
-    <div class="form">
+    <div class="form" id="form">
       <div>
         <span class="bold">
           Entre com seus dados de acesso.
@@ -21,13 +21,13 @@
         <div class="input">
           <label for="">Nome de usuário ou e-mail:</label>
           <div class="br"></div>
-          <input type="text" name="" id="" />
+          <input type="text" class="username" name="" />
           <div class="br"></div>
           <label for="">Senha:</label>
           <div class="br"></div>
-          <input type="text" name="" id="" />
+          <input type="password" class="password" name="" />
           <div class="br"></div>
-          <button>
+          <button class="buttonLogin" v-on:click="getValues()">
             Entrar
           </button>
           <div class="br"></div>
@@ -42,11 +42,35 @@
 
 <script>
 export default {
-  name: "Login"
+  name: "Login",
+  methods: {
+    setUser() {
+      localStorage.setItem("username", "root");
+      localStorage.setItem("password", "root");
+    },
+    getValues() {
+      const username = document.querySelector(".username");
+      const password = document.querySelector(".password");
+      this.sendValues(username.value, password.value);
+    },
+
+    sendValues(username, password) {
+      this.setUser();
+      const rootUsername = localStorage.getItem("username");
+      const rootPassword = localStorage.getItem("password");
+      if (username == rootUsername && password == rootPassword) {
+        alert("Login realizado com sucesso");
+        localStorage.setItem("login", "true");
+      } else {
+        alert(
+          "Usuário ou Senha incorretos. Tente username: root password: root"
+        );
+      }
+    }
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .login {
   width: 100vw;
@@ -152,6 +176,7 @@ export default {
   border-radius: 5px;
   color: var(--light-color);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .form div .input a {

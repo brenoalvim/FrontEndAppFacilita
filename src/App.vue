@@ -5,17 +5,27 @@
       href="../src/assets/facilita.png"
       type="image/x-icon"
     />
-    <Login />
+    <Login v-if="login == true" />
+    <Dashboard />
   </div>
 </template>
 
 <script>
 import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 
 export default {
   name: "App",
   components: {
-    Login
+    Login,
+    Dashboard
+  },
+
+  data() {
+    return {
+      login: true,
+      dashboard: false
+    };
   }
 };
 </script>
