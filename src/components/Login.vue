@@ -41,14 +41,9 @@
 </template>
 
 <script>
-
 export default {
   name: "Login",
   methods: {
-    setUser() {
-      localStorage.setItem("username", "root");
-      localStorage.setItem("password", "root");
-    },
     getValues() {
       const username = document.querySelector(".username");
       const password = document.querySelector(".password");
@@ -56,11 +51,7 @@ export default {
     },
 
     sendValues(username, password) {
-      this.setUser();
-      const rootUsername = localStorage.getItem("username");
-      const rootPassword = localStorage.getItem("password");
-      if (username == rootUsername && password == rootPassword) {
-        localStorage.setItem("login", "true");
+      if (username == "root" && password == "root") {
         this.$router.push("/dashboard");
       } else {
         alert(

@@ -52,6 +52,8 @@ export default {
 
 <style scoped>
 nav {
+  position: fixed;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
