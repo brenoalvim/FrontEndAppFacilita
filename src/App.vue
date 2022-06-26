@@ -23,6 +23,7 @@ export default {
   --active-color: #1182f2;
   --aside-color: #f4fbff;
   --main-color: #e9f4fb;
+  --green-color: #1ad18f;
   --font-family: "gilroy", arial;
 }
 </style>

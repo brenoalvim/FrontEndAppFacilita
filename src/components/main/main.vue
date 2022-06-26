@@ -5,7 +5,7 @@
         <div class="list">
           <ol>
             <li class="title">
-              Categoria
+              Categorias
             </li>
             <a href="#">
               <li class="active">
@@ -40,14 +40,37 @@
           </ol>
         </div>
       </div>
-      <div class="container-main"></div>
+      <div class="container-main">
+        <div class="tasks">
+          <div class="title">
+            <span>Minhas Tarefas</span>
+          </div>
+          <div class="description">
+            <span>
+              Olá <span class="name">Breno Alvim</span>, você tem
+              <span class="theAmout">4 tarefas</span>
+            </span>
+          </div>
+          <div class="search"></div>
+          <div class="task"></div>
+        </div>
+      </div>
     </div>
+    <button class="addTasks" v-on:click="openModal()">
+      <img src="../../assets/plus.png" alt="" />
+    </button>
+    <div class="modal"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MainDashboard"
+  name: "MainDashboard",
+  methods: {
+    openModal() {
+      alert("Hello");
+    }
+  }
 };
 </script>
 
@@ -93,8 +116,9 @@ export default {
 }
 
 .aside .list ol .title {
-  padding-bottom: 25px;
+  padding-bottom: 55px;
   font-weight: bold;
+  font-size: 17px;
 }
 
 .aside .list ol .active {
@@ -119,7 +143,7 @@ export default {
   align-items: center;
   padding-left: 25px;
   width: 100%;
-  gap: 5px;
+  gap: 15px;
 }
 
 .container-main {
@@ -127,6 +151,27 @@ export default {
   justify-content: center;
   align-items: center;
   min-width: 85vw;
+}
+
+.container-main .tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 70%;
   border: 1px solid red;
 }
+
+.addTasks {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 25px;
+  right: 25px;
+  background: var(--green-color);
+  border-radius: 50%;
+  border: none;
+}
+
 </style>
