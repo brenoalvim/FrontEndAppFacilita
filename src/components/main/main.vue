@@ -49,10 +49,37 @@
             <span>
               Olá <span class="name">Breno Alvim</span>, você tem
               <span class="quantity">4 tarefas</span>
+              pendentes.
             </span>
           </div>
-          <div class="search"></div>
-          <div class="task"></div>
+          <div class="search">
+            <input type="text" placeholder="Buscar Tarefas" />
+            <img src="../../assets/search.png" alt="" />
+          </div>
+          <div class="task">
+            <ol class="list-tasks">
+              <li>
+                <div class="input">
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="title-task">
+                  <span> </span>
+                </div>
+                <div class="type-task"></div>
+                <div class="options-task"></div>
+              </li>
+              <li>
+                <div class="input">
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="title-task">
+                  <span> </span>
+                </div>
+                <div class="type-task"></div>
+                <div class="options-task"></div>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
@@ -75,5 +102,9 @@ export default {
 </script>
 
 <style scoped>
-@import '../../assets/style/main.styl';
+@import "../../assets/style/main.styl";
+
+/* .task ol li div {
+  border: 1px solid red;
+} */
 </style>
