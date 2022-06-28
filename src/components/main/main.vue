@@ -60,17 +60,17 @@
             <ol class="list-tasks">
               <li>
                 <div class="input">
-                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="title-task">
-                  <span> </span>
+                  <span>Finalizar Aplicação TodoList</span>
                 </div>
                 <div class="type-task"></div>
                 <div class="options-task"></div>
               </li>
               <li>
                 <div class="input">
-                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="title-task">
                   <span> </span>
@@ -104,21 +104,5 @@ export default {
 <style scoped>
 @import "../../assets/style/main.styl";
 
-.task ol li div {
-  border: 1px solid red;
-}
 
-ol li .input {
-  width: 30px;
-  height: 30px;
-  padding: 10px;
-}
-
-ol li .input input {
-  width: 25px;
-  height: 25px;
-  border: none;
-  background: var(--main-color);
-  color: var(--main-color);
-}
 </style>
