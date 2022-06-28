@@ -2,7 +2,7 @@
   <div class="login">
     <div class="info">
       <div class="logo">
-        <img src="../assets/facilitalogo.png" alt="" />
+        <img src="../assets/img/facilitalogo.png" alt="" />
       </div>
       <div class="br"></div>
       <span class="title">

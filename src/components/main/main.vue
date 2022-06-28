@@ -9,31 +9,31 @@
             </li>
             <a href="#">
               <li class="active">
-                <img src="../../assets/arrowblue.png" alt="" />
+                <img src="../../assets/img/arrowblue.png" alt="" />
                 Todas
               </li>
             </a>
             <a href="#">
               <li>
-                <img src="../../assets/arrow.png" alt="" />
+                <img src="../../assets/img/arrow.png" alt="" />
                 Urgentes
               </li>
             </a>
             <a href="#">
               <li>
-                <img src="../../assets/arrow.png" alt="" />
+                <img src="../../assets/img/arrow.png" alt="" />
                 Importantes
               </li>
             </a>
             <a href="#">
               <li>
-                <img src="../../assets/arrow.png" alt="" />
+                <img src="../../assets/img/arrow.png" alt="" />
                 Outras
               </li>
             </a>
             <a href="#">
               <li>
-                <img src="../../assets/arrow.png" alt="" />
+                <img src="../../assets/img/arrow.png" alt="" />
                 Finalizadas
               </li>
             </a>
@@ -54,7 +54,7 @@
           </div>
           <div class="search">
             <input type="text" placeholder="Buscar Tarefas" />
-            <img src="../../assets/search.png" alt="" />
+            <img src="../../assets/img/search.png" alt="" />
           </div>
           <div class="task">
             <ol class="list-tasks">
@@ -84,7 +84,7 @@
       </div>
     </div>
     <button class="addTasks" v-on:click="openModal()">
-      <img src="../../assets/plus.png" alt="" />
+      <img src="../../assets/img/plus.png" alt="" />
     </button>
     <div class="modal"></div>
   </div>
@@ -104,7 +104,21 @@ export default {
 <style scoped>
 @import "../../assets/style/main.styl";
 
-/* .task ol li div {
+.task ol li div {
   border: 1px solid red;
-} */
+}
+
+ol li .input {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+ol li .input input {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: var(--main-color);
+  color: var(--main-color);
+}
 </style>

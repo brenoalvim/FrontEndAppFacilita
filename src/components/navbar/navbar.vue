@@ -2,13 +2,13 @@
   <div class="navbar">
     <nav>
       <div class="logo">
-        <img src="../../assets/facilitalogo.png" alt="" />
+        <img src="../../assets/img/facilitalogo.png" alt="" />
       </div>
       <div class="list">
         <ol>
           <li class="active">
             <div class="icon">
-              <img src="../../assets/dashboard.png" alt="" />
+              <img src="../../assets/img/dashboard.png" alt="" />
             </div>
             <div class="span">
               <span>
@@ -18,7 +18,7 @@
           </li>
           <li>
             <div class="icon">
-              <img src="../../assets/tarefas.png" alt="" />
+              <img src="../../assets/img/tarefas.png" alt="" />
             </div>
 
             <div class="span">
@@ -29,7 +29,7 @@
           </li>
           <li>
             <div class="icon">
-              <img src="../../assets/config.png" alt="" />
+              <img src="../../assets/img/config.png" alt="" />
             </div>
             <div class="span">
               <span>
